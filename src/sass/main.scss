@@ -1,1 +1,48 @@
 /* CSS Entry Point */
+.app {
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid #BAB4C0;
+	width: 550px;
+}
+
+h2 {
+	padding: 20px;
+	margin-top: 0;
+	background-color: #4fa5de;
+	color: white;
+	font-weight: lighter;
+	font-size: 30px;
+}
+
+input {
+	width: 450px;
+	height: 30px;
+	margin-left: 45px;
+	margin-bottom: 15px;
+}
+
+input[name="comment"] {
+	margin-top: 0px;
+	height: 80px;
+}
+
+aside {
+	position: relative;
+	left:400px;
+	bottom: 40px;
+}
+
+footer {
+	border: 1px solid black;
+	height: 80px;
+	background-color: #bfdbee;
+}
+input[type="submit"] {
+	width: 100px;
+	height: 40px;
+	margin-top: 20px;
+	color: white;
+	background-color: #4fa5de;
+	font-size: 12px;
+	
+}
