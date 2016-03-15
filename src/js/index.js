@@ -21,4 +21,6 @@ users.forEach(function(user) {
 	} else if (user.type==='textarea') {
 		template = comment;
 	}
+	var html = template(user);
+	$app.append(html);
 })
