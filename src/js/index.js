@@ -8,25 +8,32 @@ import { applicant, phone, language, email, comment} from './template';
 
 var $app = $('.app');
 
-// users.forEach(function(user) {
-// 	var template;
-// 	if (user.type === 'text') {
-// 		template = applicant;
-// 	} else if (user.type==='tel') {
-// 		template = phone;
-// 	} else if (user.type==='email') {
-// 		template = email;
-// 	} else if (user.type==='select') {
-// 		template = language;
-// 	} else if (user.type==='textarea') {
-// 		template = comment;
-// 	}
-// 	var html = template(user);
-// 	$app.append(html);
-// })
-
-users.forEach(function(user){
-	var template = userTypeToTemplate[user.type];
+users.forEach(function(user) {
+	var template;
+	if (user.type === 'text') {
+		template = applicant;
+	} else if (user.type==='tel') {
+		template = phone;
+	} else if (user.type==='email') {
+		template = email;
+	} else if (user.type==='select') {
+		template = language;
+	} else if (user.type==='textarea') {
+		template = comment;
+	}
 	var html = template(user);
 	$app.append(html);
 })
+// var userTypeToTemplate = {
+// 	'text': applicant,
+// 	'tel': phone,
+// 	'email': email,
+// 	'select': language,
+// 	'textarea': comment
+// }
+
+// users.forEach(function(user){
+// 	var template = userTypeToTemplate[user.type];
+// 	var html = template(user);
+// 	$app.append(html);
+// })
